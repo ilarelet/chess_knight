@@ -1,5 +1,3 @@
-require_relative 'Knight.rb'
-
 class Step 
     attr_accessor :cell, :children, :prev_step
     #class Step defines a cell and all possible next steps for a given piece, as well as a previous step (if given)
