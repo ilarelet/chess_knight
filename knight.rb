@@ -2,7 +2,8 @@ require_relative 'tree.rb'
 
 class Knight
     attr_reader :location, :next_locations
-    def initialize(cell)
+    def initialize(cell = [2,1], board)
+        @board = board
         @location = [cell[0],cell[1]]
         #after creating the piece we immediately scan for the possible next steps
         self.possible_moves
