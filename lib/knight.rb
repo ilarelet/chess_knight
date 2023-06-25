@@ -23,7 +23,8 @@ class Knight
         path = tree.search(goal)
         puts "You can get to that cell in #{path.length - 1} moves!"
         puts "Here is your path!"
-        path.each {|cell| p cell}
+        print path
+        path.length - 1
     end
 
     private

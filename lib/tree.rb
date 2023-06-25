@@ -22,7 +22,7 @@ class Tree
 
     def search(search, start = @root)
         #If the piece is already in a searched cell - stop the search
-        return start.cell if search == start.cell
+        return [start.cell] if search == start.cell
         # To start the search all children of the start cell are put in a queue
         start.children.each do |child| 
             @queue.append Step.new(child, @piece, start)
